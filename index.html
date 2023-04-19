@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Cifrado</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body class="body">
+    <div>
+
+        <div class="image-vector"><img class="image" src="Vector.png"></div>
+
+        <div class="area-encriptar">
+            <textarea class="ingreso" type="text" id="ingreso" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        <div class="botones">
+            <img class="simb" src="simbolo.png">
+            <a class="texto">Solo letras minusculas y sin acento</a>
+            <br><button class="btnCifrado" id="Cifrado" onclick="Encriptar()">Cifrar</button><br>
+            <button class="btnDescifrado" id="DesCifrado" onclick="DesEncriptar()">Descifrar</button>
+        </div>
+
+        <div class="area-resultado">
+
+            <textarea class="resultado" id="resultado"></textarea>
+            <img class="muneco" id="muneco" src="muneco.png">
+            <p class="text1" id="text1">No se encontro ningun texto</p>
+            <p class="text2" id="text2">Ingrese el texto que desee Cifrar o Descifrar</p>
+            <button class="btnCopy" id="Copy" onclick="Copiar()">Copiar</button>
+
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="logic.js"></script>
+</body>
