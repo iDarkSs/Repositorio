@@ -13,9 +13,11 @@ document.getElementById("ingreso").addEventListener("keypress", verificar);
 function verificar(e) {
     document.getElementById("Cifrado").onclick = function () {
         if (e.key.match(/[a-z\s]/g) === null) {
-            // Si la tecla pulsada no es la correcta, eliminado la pulsación
+            
             alert("Solo se pueden ingresar letras minusculas");
+            //Si no se cumple la condicion que el campo de ingreso se vuelva vacio
             document.getElementById("ingreso").value = "";
+            // Si la tecla pulsada no es la correcta, eliminado la pulsación
             e.preventDefault();
         }else{
             Encriptar();
