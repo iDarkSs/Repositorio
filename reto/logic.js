@@ -14,7 +14,7 @@ function verificar(e) {
     document.getElementById("Cifrado").onclick = function () {
         if (e.key.match(/[a-z\s]/g) === null) {
             // Si la tecla pulsada no es la correcta, eliminado la pulsación
-            alert("Nose puede ingresar ese tipo de caracter");
+            alert("Solo se pueden ingresar letras minusculas");
             document.getElementById("ingreso").value = "";
             e.preventDefault();
         }else{
